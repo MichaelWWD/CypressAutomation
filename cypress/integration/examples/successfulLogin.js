@@ -18,7 +18,7 @@ cy.wait(2000)
 cy.contains('Phone').type('Michael_eli_')
 
 //Input Twitter password
-cy.contains('Password').type('Damnation69')
+cy.contains('Password').type('123456789')
 
 //Click login button
 cy.contains('Login').click()
