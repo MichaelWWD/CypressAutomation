@@ -18,14 +18,14 @@ cy.wait(2000)
 cy.contains('Phone').type('Michael_eli_')
 
 //Input Twitter password
-cy.contains('Password').type('Damnation69')
+cy.contains('Password').type('1234567')
 
 //Click login button
 cy.contains('Login').click()
 
 //Assertion for successful login
 
-if(cy.get('.r-18kxxzh > .css-4rbku5 > .r-1twgtwe').should('be.visible'))
+if(cy.get('.r-18kxxzh > .css-4rbku5 > .r-1twgtwe').should('not.exist'))
 {
   cy.log('Test passed')
 } 
